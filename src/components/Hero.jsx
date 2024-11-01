@@ -65,8 +65,8 @@ const Hero = () => {
                   {img.paragraph}
                 </p>
 
-                <div className="w-full">
-                  <form class="md:max-w-xl max-w-md mx-auto mt-8">
+                <div className="md:w-full w-[90%]">
+                  <form class="md:max-w-xl max-w-sm mx-auto mt-8">
                     <label
                       for="default-search"
                       class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -94,7 +94,7 @@ const Hero = () => {
                       <input
                         type="search"
                         id="default-search"
-                        class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 rounded-full"
+                        class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 rounded-full"
                         placeholder="Search for a home or rentals..."
                         required
                       />

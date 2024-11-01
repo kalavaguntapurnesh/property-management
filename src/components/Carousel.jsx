@@ -258,7 +258,7 @@ const Carousel = () => {
                 <div className="w-full max-w-[14000px] mx-auto space-y-4">
                   <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                     <div className="flex flex-col justify-center space-y-3 md:p-8 p-1">
-                      <div className="font-semibold text-4xl text-headingColor w-[100%]">
+                      <div className="font-bold text-4xl text-headingColor w-[100%]">
                         <h1 className="md:text-start text-center">
                           Access lawyer-reviewed, state-specific lease agreement
                           templates
