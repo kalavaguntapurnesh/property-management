@@ -248,15 +248,15 @@ const Dashboard = () => {
                   <span className="flex items-center">
                     <HiDocumentReport /> <h1 className="ml-2">Reports</h1>
                   </span>
-                  <FaAngleDown
+                  {/* <FaAngleDown
                     className={`transition-transform ${
                       openDropdownMobile === "reports"
                         ? "rotate-180 text-mainColor"
                         : ""
                     }`}
-                  />
+                  /> */}
                 </div>
-                <AnimatePresence>
+                {/* <AnimatePresence>
                   {openDropdownMobile === "reports" && (
                     <motion.ul
                       initial={{ opacity: 0, height: 0 }}
@@ -287,7 +287,7 @@ const Dashboard = () => {
                       </li>
                     </motion.ul>
                   )}
-                </AnimatePresence>
+                </AnimatePresence> */}
               </li>
             </ul>
             <div className="px-4 ">
@@ -349,17 +349,17 @@ const Dashboard = () => {
           }`}
         >
           {/* Header */}
-          <header className="flex items-center justify-between bg-white p-5 shadow-md">
+          <header className="flex items-center justify-between bg-white p-5 shadow">
             <div className="flex items-center space-x-4 lg:space-x-0 w-full">
               <button onClick={openSidebar} className="lg:hidden text-2xl">
                 <RiMenu3Fill />
               </button>
               {/* Centered Search Bar on Mobile */}
-              <div className="lg:pl-8 pl-16">
+              <div className="lg:pl-8 pl-8 w-full lg:w-1/2">
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="w-full max-w-xs px-4 py-2 rounded-md focus:outline-none focus:border-gray-400 mx-auto lg:mx-0 lg:block border-[0.5px] border-gray-500"
+                  className="w-full max-w-2xl px-4 py-2 rounded-full focus:outline-none focus:border-gray-400 mx-auto lg:mx-0 lg:block border-[1px] border-gray-500"
                 />
               </div>
             </div>
@@ -371,7 +371,7 @@ const Dashboard = () => {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4">
+              <a href="/" className="flex items-center space-x-4 cursor-pointer">
                 <div className="lg:flex hidden flex-col justify-center items-center">
                   <h1 className="font-semibold">Purnesh</h1>
                   <p className="text-gray-500 text-sm">Landlord</p>
@@ -379,9 +379,9 @@ const Dashboard = () => {
                 <img
                   src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
                   alt="Profile"
-                  className="w-10 h-10 rounded-full cursor-pointer"
+                  className="w-10 h-10 rounded-full"
                 />
-              </div>
+              </a>
 
               {/* Profile Picture */}
             </div>
