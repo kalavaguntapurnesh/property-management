@@ -2,13 +2,11 @@ import React, { useState, useEffect } from "react";
 import { RiCriminalFill, RiGuideFill, RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import { RiCustomerService2Fill } from "react-icons/ri";
 import {
   MdAccountBalanceWallet,
   MdArticle,
   MdCable,
   MdOutlineHomeRepairService,
-  MdOutlinePrivacyTip,
   MdOutlineWorkHistory,
   MdPayment,
 } from "react-icons/md";

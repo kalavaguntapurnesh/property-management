@@ -65,7 +65,7 @@ const Hero = () => {
                   {img.paragraph}
                 </p>
 
-                <div className="md:w-full w-[90%]">
+                <div className="md:w-full w-[90%] md:hidden block">
                   <form class="md:max-w-xl max-w-sm mx-auto mt-8">
                     <label
                       for="default-search"

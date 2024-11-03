@@ -151,7 +151,12 @@ const Register = () => {
                         {/* Sign Up Button */}
                         <button
                           type="submit"
-                          className="w-full text-white bg-mainColor text-base hover:bg-colorFour transition ease-in-out duration-1000 focus:outline-none font-medium rounded px-5 py-2.5 text-center cursor-pointer"
+                          disabled={!role}
+                          className={`w-full text-base font-medium rounded px-5 py-2.5 text-center transition ease-in-out duration-1000 ${
+                            role
+                              ? "bg-mainColor hover:bg-colorFour text-white"
+                              : "bg-[#f8f9fa] cursor-not-allowed text-gray-400"
+                          }`}
                         >
                           Sign Up{" "}
                           {role &&
