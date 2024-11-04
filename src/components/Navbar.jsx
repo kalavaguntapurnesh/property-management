@@ -151,7 +151,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Company
+                Landlords
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "home"
@@ -168,25 +168,89 @@ const NavBar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-gray-700 ">
-                      <a href="/learn-about-us" className="text-sm">
-                        About Us
+                     <li className="text-gray-700 ">
+                      <a href="/rental-listing" className="text-sm">
+                        Rental Listings
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a
-                        href="/learn-about-us#logo_meaning"
+                        href="/online-rental-applications"
                         className="text-sm"
                       >
-                        Logo Meaning
+                        Rental Applications
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a
-                        href="/learn-about-us#about_founder"
+                        href="/online-tenant-screening"
                         className="text-sm"
                       >
-                        Leadership
+                        Tenant Screening
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/credit-and-background-check"
+                        className="text-sm"
+                      >
+                        Credit, Criminal, Eviction Reports
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/rental-lease-agreement"
+                        className="text-sm"
+                      >
+                        Digital Leases
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/online-rent-collection"
+                        className="text-sm"
+                      >
+                        Online Rent Collection
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/fastpay"
+                        className="text-sm"
+                      >
+                        FastPay
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/maintenance-tracking"
+                        className="text-sm"
+                      >
+                        Maintenance Tracking
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/rent-analysis"
+                        className="text-sm"
+                      >
+                        Rent Price Analysis
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/rental-property-accounting"
+                        className="text-sm"
+                      >
+                        Property Accounting
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a
+                        href="/rental-property-calculator"
+                        className="text-sm"
+                      >
+                        Rental Property Calculator
                       </a>
                     </li>
                   </motion.ul>
@@ -198,7 +262,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("products")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Products
+                Tenants
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "products"
@@ -217,22 +281,32 @@ const NavBar = () => {
                   >
                     <li className="text-gray-700">
                       <a href="/" className="text-sm">
-                        LM Beehive
+                      Renter Profile
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/" className="text-sm">
-                        LM Broadcast
+                      Online Rent Payments
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/enroll-rewards" className="text-sm">
-                        Enroll Rewards
+                      Digital Lease
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/" className="text-sm">
-                        Ecommerce Platform
+                      Maintenance Tickets
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a href="/" className="text-sm">
+                      Credit Boost
+                      </a>
+                    </li>
+                    <li className="text-gray-700">
+                      <a href="/" className="text-sm">
+                      Find Next Place
                       </a>
                     </li>
                   </motion.ul>
@@ -244,7 +318,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Subscription
+                Education
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "subscription"
@@ -261,29 +335,29 @@ const NavBar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-gray-700">
+                   <li className="text-gray-700">
                       <a href="/pricing#pricing_platinum" className="text-sm">
-                        Platinum
+                      Rental News
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/pricing#pricing_gold" className="text-sm">
-                        Gold
+                      Articles
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/pricing#pricing_silver" className="text-sm">
-                        Silver
+                      Guides  
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/pricing#pricing_bronze" className="text-sm">
-                        Bronze
+                      Resources
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/pricing" className="text-sm">
-                        Free Tier
+                      Laws
                       </a>
                     </li>
                   </motion.ul>
@@ -291,42 +365,7 @@ const NavBar = () => {
               </AnimatePresence>
             </li>
 
-            <li className="p-4 border-b border-gray-600">
-              <div
-                onClick={() => toggleMobileDropdown("privacy")}
-                className="flex items-center justify-between cursor-pointer"
-              >
-                Privacy
-                <FaAngleDown
-                  className={`transition-transform ${
-                    openDropdownMobile === "privacy"
-                      ? "rotate-180 text-mainColor"
-                      : ""
-                  }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "privacy" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-gray-700">
-                      <a href="/privacy-policy" className="text-sm">
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/consumer-privacy" className="text-sm">
-                        Consumer Policy
-                      </a>
-                    </li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </li>
+           
             {/* <li className="p-4 border-b border-gray-600">
               <div
                 onClick={() => toggleMobileDropdown("contact")}
@@ -573,7 +612,7 @@ const Blog = () => {
         </span>
       </a>
       <a
-        href="/learn-about-us#about_founder"
+        href="/rental-lease-agreement"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiPaperclip className="mb-2 text-xl text-mainColor" />
@@ -619,7 +658,7 @@ const Homebar = () => {
   return (
     <div className="grid grid-cols-4 gap-4 ">
       <a
-        href="/learn-about-us"
+        href="/rental-listing"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaHouseCircleCheck className="mb-2 text-xl text-mainColor" />
@@ -628,7 +667,7 @@ const Homebar = () => {
         </span>
       </a>
       <a
-        href="/learn-about-us#logo_meaning"
+        href="/online-rental-applications"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaDollarSign className="mb-2 text-xl text-mainColor" />
@@ -637,7 +676,7 @@ const Homebar = () => {
         </span>
       </a>
       <a
-        href="/learn-about-us#about_founder"
+        href="/online-tenant-screening"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaUserAlt className="mb-2 text-xl text-mainColor" />
@@ -647,7 +686,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/learn-about-us#about_founder"
+        href="/credit-and-background-check"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <RiCriminalFill className="mb-2 text-xl text-mainColor" />
@@ -657,7 +696,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/learn-about-us#about_founder"
+        href="/rental-lease-agreement"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiPieChart className="mb-2 text-xl text-mainColor" />
@@ -667,7 +706,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/learn-about-us#about_founder"
+        href="/online-rent-collection"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <GrTechnology className="mb-2 text-xl text-mainColor" />
@@ -677,7 +716,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/learn-about-us#about_founder"
+        href="/fastpay"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdPayment className="mb-2 text-xl text-mainColor" />
@@ -685,7 +724,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/learn-about-us#about_founder"
+        href="/maintenance-tracking"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdOutlineHomeRepairService className="mb-2 text-xl text-mainColor" />
@@ -694,7 +733,7 @@ const Homebar = () => {
         </span>
       </a>
       <a
-        href="/learn-about-us#about_founder"
+        href="/rent-analysis"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdOutlineWorkHistory className="mb-2 text-xl text-mainColor" />
@@ -704,7 +743,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/learn-about-us#about_founder"
+        href="/rental-property-calculator"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FaCalculator className="mb-2 text-xl text-mainColor" />
@@ -714,7 +753,7 @@ const Homebar = () => {
       </a>
 
       <a
-        href="/learn-about-us#about_founder"
+        href="/rental-property-accounting"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <MdAccountBalanceWallet className="mb-2 text-xl text-mainColor" />
